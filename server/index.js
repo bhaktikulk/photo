@@ -150,6 +150,10 @@ const EmployeeSchema = new mongoose.Schema({
 
 const EmployeeModel = mongoose.model("Employee", EmployeeSchema);
 
+app.get("/",(req,res)=>{
+  res.json("Hello");
+}
+
 // Routes
 
 // Login Endpoint
